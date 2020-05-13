@@ -45,3 +45,9 @@ resource "aws_lambda_function" "lambda" {
     }
   }
 }
+
+resource "aws_api_gateway_domain_name" "id-test-" {
+  domain_name     = my-domain.test
+  certificate_arn = a-cert-arn
+  arn             = an-arn
+}
